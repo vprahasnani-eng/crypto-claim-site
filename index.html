@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Free Crypto Claim</title>
+</head>
+<body>
+  <h2>🪙 Free Crypto Every Hour</h2>
+  <p>Enter your FaucetPay wallet address:</p>
+  <input type="text" id="wallet" placeholder="FaucetPay Wallet"><br><br>
+  <button onclick="claim()">Claim Now</button>
+
+  <script>
+    function claim() {
+      const wallet = document.getElementById("wallet").value;
+      if(wallet){
+        alert("Crypto sent to: " + wallet + " (Demo only)");
+      } else {
+        alert("Please enter your wallet address");
+      }
+    }
+  </script>
+</body>
+</html>
